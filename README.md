@@ -4,7 +4,7 @@ PHPで特徴抽出(tfIDF)を実装
 # 実装方法
 ```
 //class 実行
-$tfIDF = new phpTfIDF();
+$tfIDF = new tfIDF();
 
 //特徴抽出単語選択
 tfIDF::$word = array("hello","world");
