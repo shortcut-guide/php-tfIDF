@@ -1,11 +1,10 @@
-class phpTfIDF{
+class tfIDF{
 	public static $word;
 	public static $document;
+	
+	// hookを登録します
+	public function __construct() {}
 
-  // hookを登録します
-	public function __construct() {
-
-	}
 	public function check($value){
 		// Swap newlines for spaces, you'll see why
 	  $doc = str_replace("\n",' ',self::$document);
