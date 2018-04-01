@@ -1,10 +1,12 @@
+<?php
 class tfIDF{
 	public static $word;
 	public static $document;
-	
-	// hookを登録します
-	public function __construct() {}
 
+  // hookを登録します
+	public function __construct() {
+
+	}
 	public function check($value){
 		// Swap newlines for spaces, you'll see why
 	  $doc = str_replace("\n",' ',self::$document);
@@ -42,8 +44,10 @@ class tfIDF{
 		$arr_tfIDF = array();
 		foreach(self::$word as $key => $value ):
 			$res_tfIDF = self::check($value);
-			$arr_keys = array($key=>$res_tfIDF);
+			$arr_keys = array($value=>$res_tfIDF);
 			$arr_tfIDF = array_merge($arr_tfIDF,$arr_keys);
 		endforeach;
+		var_dump_ex($arr_tfIDF);
 	}
 }
+?>
