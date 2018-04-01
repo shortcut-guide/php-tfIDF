@@ -46,6 +46,5 @@ class phpTfIDF{
 			$arr_keys = array($key=>$res_tfIDF);
 			$arr_tfIDF = array_merge($arr_tfIDF,$arr_keys);
 		endforeach;
-		var_dump_ex($arr_tfIDF);
 	}
 }
